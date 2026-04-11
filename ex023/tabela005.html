@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercicio de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.destaque{
+            background-color: greenyellow;
+        }
+        td.destaque1{
+            background-color: blueviolet;
+        }
+
+        col.cnome{
+            background-color: rgb(42, 48, 165);
+        }
+
+
+        col.csexo{
+            background-color: burlywood;
+        }
+
+        col.cidade{
+            background-color: deeppink;
+        }
+
+        col.cprof{
+            background-color: darkturquoise;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Exercicio de Tabelas</h1>
+
+    <table>
+        <colgroup>  
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Gleice Kelly</td>
+            <td>F</td>
+            <td>37</td>
+            <td>Corretora de Seguros</td>
+        </tr>
+        <tr>
+            <td>Side</td>
+            <td>M</td>
+            <td>40</td>
+            <td>Fazedor de Calcinha</td> 
+        </tr>
+        <tr>
+            <td class="destaque">Gustavo</td>
+            <td>M</td>
+            <td>16</td>
+            <Td>Programador</Td>
+        </tr>
+        <tr>
+            <td class="destaque">Julia Yumi</td>
+            <td>M</td>
+            <Td>17</Td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Italo</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td class="destaque1">Maria Giovanna</td>
+            <td>F</td>
+            <td>6</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
 </body>
 </html>
